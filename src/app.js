@@ -18,17 +18,19 @@ async function bulkCreateProfiles () {
 
 
   const val = await login();
-        // Save data in MongoDB
+      // Save data in MongoDB
+      // TODO: check if user already exist
       Profiles.insertMany(val);
-  mongoose.connection.close(function(){
-    console.log('Mongoose default connection disconnected through app termination');
-    process.exit(0);
-  });
-    }
+
+      // Close db connection
+      mongoose.connection.close(function(){
+        console.log('Mongoose default connection disconnected through app termination');
+        process.exit(0);
+      });
+   }
  catch (error) {
     console.log(error);
   }
-  
 }
 
 bulkCreateProfiles();

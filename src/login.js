@@ -1,6 +1,5 @@
 import { launch } from 'puppeteer';
 import cheerio from 'cheerio';
-
 import * as dotenv from 'dotenv';
 dotenv.config();
 
@@ -15,7 +14,7 @@ const profileURLs = [
         "https://www.linkedin.com/in/stenrs/",
         "https://www.linkedin.com/in/alexghattas/",
         "https://www.linkedin.com/in/rajiaabdelaziz",
-    ]
+]
 const profiles = [];
 async function login() {
     try {
