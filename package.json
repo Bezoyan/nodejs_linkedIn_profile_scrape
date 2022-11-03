@@ -1,0 +1,27 @@
+{
+  "name": "linvo_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.1.2",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.0.3",
+    "fs": "^0.0.1-security",
+    "jsonfile": "^6.1.0",
+    "mongoose": "^6.7.1",
+    "node-cron": "^3.0.0",
+    "puppeteer": "^19.2.1",
+    "puppeteer-core": "^19.2.1",
+    "request-promise": "^4.2.6",
+    "scrape-linkedin": "^0.0.2",
+    "scrapedin": "^1.0.21",
+    "worker-thread": "^1.1.0"
+  },
+  "type": "module"
+}
